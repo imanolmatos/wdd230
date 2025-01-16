@@ -1,0 +1,113 @@
+@media screen and (min-width: 500px) {
+     
+:root {
+    --primary-color: #089dff;
+    --secondary-color: #FFFFFC;
+    --accent1-color: #376323;
+    --accent2-color: #000500;   
+    --paragraph-font: 'Roboto', sans-serif;
+}
+
+body {display: grid;
+      grid-template-rows:  auto auto auto auto;
+      grid-template-columns: auto auto;
+      gap: 10px;
+}
+
+nav{grid-column: 1/3;
+}
+
+ul li{ list-style-type: none;
+
+}
+
+section ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--accent2-color);
+}
+
+section ul li a:hover{
+        color: var(--primary-color);
+}
+
+nav ul {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+}
+
+nav ul .active {background-color: var(--accent1-color);
+
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    text-decoration-style: none;
+    
+}
+nav a:hover { color: var(--primary-color);
+}
+
+header {grid-column:  1 / 3;   
+    text-align: center;
+       
+}
+
+header span {
+             font-size: 30px;;
+}
+
+main {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto 1fr;
+      height: 55vh;
+      gap: 30px;
+      text-align: start;
+      max-width: 200vh;
+}
+
+
+main h2 { background-color: #089dff;
+         text-align: center;
+}
+
+ .card {grid-row: 2;
+        grid-column: 1;
+        border: 1px solid;
+        border-radius: 2%;
+       
+}
+
+.information {grid-row: 2;
+              grid-column: 2;
+              border: #000500;
+              border: 1px solid;
+              border-radius: 2%;
+              text-align: center;             
+}
+
+.card h2, .information h2{  color:var(--secondary-color);
+}
+    
+footer {grid-column: 1/3;
+        text-align: center;
+        background-color: #089dff;
+        color: var(--secondary-color);
+}
+
+
+
+}
+  
+  
+
